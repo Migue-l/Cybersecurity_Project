@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial';
-    background: linear-gradient(128deg, #2980b9, #2c3e50);
+    background: linear-gradient(180deg, #2980b9, #2c3e50);
     margin: 0;
     padding: 0;
     color: white;
@@ -23,6 +23,9 @@ header {
 
 .dashboard-content {
     color: white;
+    justify-content: center;
+    flex: column;
+    padding: 40px;
 }
 
 .logout-button {
@@ -32,9 +35,10 @@ header {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease-in-out; 
 }
 
 .logout-button:hover {
+    transform: scale(1.06);
     background: #c0392b;
 }

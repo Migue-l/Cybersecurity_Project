@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SafeBank Dashboard</title>
+    <style>
+        iframe {
+            border: 2px transparent;
+            border-radius: 12px;
+            margin-left: 4%;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
     <link rel="stylesheet" href="dashboard.css">
 </head>
 
@@ -16,7 +24,8 @@
         </header>
 
         <div class="dashboard-content">
-            dashboard stuff goes here
+            <iframe className="box" src="../Bank/bank.html" width="500" height="400"></iframe>
+            <iframe className="box" src="../Document/document.html" width="500" height="400"></iframe>
         </div>
 
     </div>
