@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document Center</title>
+  <link rel="stylesheet" href="document.css" />
+</head>
+<body>
+  <div class="upload-container">
+    <h1>📁 Document Center</h1>
+    <form id="uploadForm">
+      <input type="file" id="fileInput" accept="image/*" />
+      <button type="submit">Upload</button>
+      <div id="error" class="error-message"></div>
+    </form>
+
+    <div id="preview" class="preview-section">
+      <h2>Preview</h2>
+      <div id="imageContainer"></div>
+    </div>
+  </div>
+
+  <script src="document.js"></script>
+</body>
+</html>
