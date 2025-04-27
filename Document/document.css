@@ -1,14 +1,14 @@
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: white;
+    background: #f1f1f1;
     margin: 0;
     padding: 2rem;
     display: flex;
+    color: #363636;
     justify-content: center;
   }
   
   .upload-container {
-    background: #fff;
     text-align: center;
   }
   
@@ -27,7 +27,9 @@ body {
   button {
     padding: 0.5rem 1rem;
     transition: all 0.3s ease-in-out; 
-    background-color: #2980b9;
+    background-color: rgb(4, 204, 71);
+    font-size: 16px;
+    padding: 8px 18px;
     color: white;
     border: none;
     border-radius: 6px;
@@ -35,12 +37,13 @@ body {
   }
   
   button:hover {
-    background-color: #2c3e50;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.267);
+    background-color: rgb(5, 138, 49);
     transform: scale(1.06);
   }
   
   .error-message {
-    color: red;
+    color: #084e08;
     font-size: 0.9rem;
     margin-top: 0.5rem;
   }

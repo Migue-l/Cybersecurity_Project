@@ -1,9 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    background: white;
+    background: #f1f1f1;
     padding: 2rem;
     display: flex;
     justify-content: center;
+    color: #363636;
   }
   
   .bank-container {
@@ -24,10 +25,12 @@ body {
   }
   
   input {
-    width: 85%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    font-size: 1rem;
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-bottom: 7px;
   }
   
   button {
@@ -43,34 +46,35 @@ body {
 
   button:hover{
     transform: scale(1.06);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.267);
   }
   
   .deposit-btn {
-    background: #2980b9;;
+    background: rgb(4, 204, 71);
     color: white;
   }
 
   .deposit-btn:hover {
-    background-color: #2c3e50;
+    background-color: rgb(5, 138, 49);
   }
   
   .withdraw-btn {
-    background: #e74c3c;
+    background: #424242;
     color: white;
   }
 
   .withdraw-btn:hover {
-    background-color: #c0392b;
+    background-color: #1d1d1d;
   }
   
   .error {
-    color: red;
+    color: #084e08;
     font-size: 0.9rem;
     margin-top: 0.5rem;
   }
   
   .success {
-    color: green;
+    color: rgb(4, 204, 71);
     font-size: 0.9rem;
     margin-top: 0.5rem;
   }

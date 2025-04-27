@@ -1,9 +1,9 @@
 body {
     font-family: 'Arial';
-    background: linear-gradient(180deg, #2980b9, #2c3e50);
+    background: linear-gradient(180deg, #1a1a1a, #131313);
     margin: 0;
     padding: 0;
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,31 +13,34 @@ body {
 
 .welcome-container {
     max-width: 600px;
-    padding: 2rem;
+    padding: 3rem;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 5rem;
+    color: rgb(4, 204, 71);
+    font-style: italic;
     margin-bottom: 1rem;
 }
 
 p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    transform:translateY(-20px);
+    margin-bottom: 0.2rem;
     opacity: 0.9;
 }
 
 .welcome-button {
-    background-color: #2980b9;
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 1rem 2rem;
     font-size: 1.1rem;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .welcome-button:hover {
-    background-color: #2471a3;
+    background-color: rgb(216, 216, 216);
+    transform: scale(1.04);
 }
