@@ -2,7 +2,25 @@ let failedAttempts = 0;
 const maxAttempts = 3;
 let isLocked = false;
 
-document.getElementById("loginForm").addEventListener("submit", function (e) {
+// func to ensure inputs are letters and numbers only
+function isValidInput(input) {
+  return /^[a-zA-Z0-9]*$/.test(input);
+}
+
+// real time input validation
+document.getElementById("username").addEventListener("input", function(e) {
+  if (!isValidInput(this.value)) {
+    this.value = this.value.replace(/[^a-zA-Z0-9]/g, '');
+  }
+});
+
+document.getElementById("password").addEventListener("input", function(e) {
+  if (!isValidInput(this.value)) {
+    this.value = this.value.replace(/[^a-zA-Z0-9]/g, '');
+  }
+});
+
+document.getElementById("loginForm").addEventListener("submit", function(e) {
   e.preventDefault();
 
   const username = document.getElementById("username").value.trim();
